@@ -1,6 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+
+    const links = <>
+        <NavLink className="btn btn-ghost" to="/">Home</NavLink>
+        <NavLink className="btn btn-ghost" to="/statistics">Statistics</NavLink>
+        <NavLink className="btn btn-ghost" to="/applied">Applied Jobs</NavLink>
+        <NavLink className="btn btn-ghost" to="/blog">Blogs</NavLink>
+    </>
+
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm lg:px-20">
@@ -12,18 +20,14 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <NavLink className="btn btn-ghost" to="/statistics">Statistics</NavLink>
-                            <NavLink className="btn btn-ghost" to="/applied">Applied Jobs</NavLink>
-                            <NavLink className="btn btn-ghost" to="/blog">Blogs</NavLink>
+                                {links}
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">CareerHub</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <NavLink className="btn btn-ghost" to="/statistics">Statistics</NavLink>
-                        <NavLink className="btn btn-ghost" to="/applied">Applied Jobs</NavLink>
-                        <NavLink className="btn btn-ghost" to="/blog">Blogs</NavLink>
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
