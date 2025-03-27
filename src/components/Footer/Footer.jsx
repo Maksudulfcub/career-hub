@@ -2,13 +2,13 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content py-10 mt-20 lg:px-20">
                 <aside>
                     <img src="../../assets/logo/CareerHub.png" alt="" />
                     <p>
-                        ACME Industries Ltd.
+                        <span className="text-2xl font-semibold">CareerHub Ltd.</span>
                         <br />
-                        Providing reliable tech since 1992
+                        Providing reliable service since 1992
                     </p>
                 </aside>
                 <nav>
